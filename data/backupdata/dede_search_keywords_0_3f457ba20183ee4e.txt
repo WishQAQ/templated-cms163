@@ -1,0 +1,16 @@
+INSERT INTO `dede_search_keywords` VALUES('1','11','11','1','0','1406532109','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','1111','1111','1','0','1406532145','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','海康威视','海康威视 威视 康威视','16','6','1410613244','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','海','海','1','1','1406603554','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','楼宇可视对讲','楼宇可视对讲 可视对讲 楼宇','9','0','1410613226','0','0');
+INSERT INTO `dede_search_keywords` VALUES('6','130万','130万','6','0','1409069798','0','0');
+INSERT INTO `dede_search_keywords` VALUES('7','硬盘录像机','硬盘录像机 录像机 硬盘','7','1','1410614968','0','0');
+INSERT INTO `dede_search_keywords` VALUES('8','红外对射','红外对射 对射 红外','8','1','1410614977','0','0');
+INSERT INTO `dede_search_keywords` VALUES('9','考勤机','考勤机 考勤机','9','0','1410613230','0','0');
+INSERT INTO `dede_search_keywords` VALUES('10','远程手机监控','远程手机监控 手机 监控 远程','10','0','1427000848','0','0');
+INSERT INTO `dede_search_keywords` VALUES('11','��������','��������','2','0','1407420155','0','0');
+INSERT INTO `dede_search_keywords` VALUES('12','Զ���ֻ�����','Զ���ֻ�����','1','0','1407420070','0','0');
+INSERT INTO `dede_search_keywords` VALUES('13','���ڻ�','���ڻ�','1','0','1407420546','0','0');
+INSERT INTO `dede_search_keywords` VALUES('14','as','as','2','0','1407988501','0','0');
+INSERT INTO `dede_search_keywords` VALUES('15','dd','dd','1','0','1425435402','0','0');
+INSERT INTO `dede_search_keywords` VALUES('16','监控','监控','1','8','1427000844','0','0');

@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="design by tmy.cc" />
+<link href="/template/skin81/pc/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+{dede:include filename="top.htm"/}
+<style type="text/css">
+
+#kinMaxShow{visibility:hidden;width:100%; height:366px; overflow:hidden;}
+</style>
+<script src="/template/skin81/pc/js/jquery.kinMaxShow-1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(function(){
+	$("#kinMaxShow").kinMaxShow();
+});
+
+</script>
+<div class="banner_ctr" id="banner">
+    <div id="kinMaxShow">
+        <div>
+            <a href="/qiyejianjie/" target="_blank"><img alt="湖北智美达安防工程有限公司,您身边的安防专家!" src="/upload/pic/banner1.jpg"   /></a>
+        </div>
+        
+        <div>
+            <a href="/qiyejianjie/" target="_blank"><img alt="湖北智美达安防,专业高清监控提供商!" src="/upload/pic/banner2.jpg"  /></a>
+        </div>
+        
+        <div>
+            <a href="/qiyejianjie/" target="_blank"><img alt="湖北智美达安防,湖北省一级安防资质企业!" src="/upload/pic/banner3.jpg"   /></a>
+        </div>
+        
+        <div>
+            <a href="#" target="_blank"><img alt="海康威视发布业内首款300万全实时高清智能球机" src="/upload/pic/banner4.jpg"   /></a>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div class="m_ctr">
+        <div class="ss_ctr">
+            <div class="ss_p1"></div>
+            <form name="formsearch" id="searchform" method="post" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+    <input type="text"  name="q"  id="s" class="ss_input" value="站内搜索"  />
+    <input type="button" name="toptosearch" id="toptosearch" value=" " title="搜索" class="ss_btn" />
+		  <script type="text/javascript">
+		  $("#toptosearch").click(function(){$("#searchform").submit();});
+		  $("#s").focus(function(){if($.trim($("#s").val())=='站内搜索'){$("#s").val("");}});
+		  $("#s").blur(function(){if($.trim($("#s").val())==''){$("#s").val("站内搜索");}});
+		  </script>
+    <div class="ss_keys"><strong>热门关键词：</strong>{dede:tag row='7' sort='new' getall='1'}<a href="'[field:link/]">[field:tag /]</a> {/dede:tag}</div>
+</form>
+        </div>
+    </div>
+    <div class="m_ctr">
+        <div class="m_ctr11">
+            <div class="m_t1">
+                <div class="m_t11">关于我们<span> / ABOUT US</span></div>
+                <div class="m_t12">{dede:type typeid='1'}<a href="[field:typelink /]" >{/dede:type}<img alt="关于我们" src="/template/skin81/pc/images/more1.gif" /></a></div>
+            </div>
+            <div class="m_ctt11">
+                {dede:myad name='关于我们'/}
+            </div>
+        </div>
+        <div class="m_ctr12">
+            <div class="m_t1">
+                <div class="m_t11">新闻中心<span> / NEWS CENTER</span></div>
+                <div class="m_t12">{dede:type typeid='5'}<a href="[field:typelink /]" >{/dede:type}<img alt="新闻中心" src="/template/skin81/pc/images/more1.gif" /></a></div>
+            </div>
+            <div class="m_ctt11">
+{dede:arclist typeid='5' titlelen='42' row='6' } 
+                <div class="m_txtctr">
+                    <div class="m_txt1">·<a href="[field:arcurl /]" title="[field:title /]">[field:title /]</a></div>
+                    <div class="m_txt2">[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</div>
+                </div>
+{/dede:arclist}               
+                
+            </div>
+        </div>
+        <div class="m_ctr13">
+            <div class="m_lxwm"><img alt="服务咨询热线" src="/template/skin81/pc/images/r1.gif" width="204" height="52" /></div>
+            <div class="m_lxwm"><img alt="联系方式" src="/template/skin81/pc/images/r2.gif" width="204" height="52" /></div>
+            <div class="m_zxly">
+                <div class="m_qq"><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2078034005&site=qq&menu=yes'><img alt="qq咨询" src="/template/skin81/pc/images/tm.png" width="92" height="40" /></a></div>
+                <div class="m_qq"><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2078034005&site=qq&menu=yes'><img alt="快速咨询" src="/template/skin81/pc/images/tm.png" width="92" height="40" /></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="m_ctr">{dede:myad name='newshh'/}</div>
+    <div class="m_ctr">
+        <div class="m_t25">
+            <div class="m_t252" id="pt1" onmouseover="showp(1);">视频监控系统</div>
+            <div class="m_t251" id="pt2" onmouseover="showp(2);">防盗报警系统</div>
+            <div class="m_t251" id="pt3" onmouseover="showp(3);">楼宇对讲系统</div>
+        </div>
+        <div class="m_ctr2" style="border-top:0;height:178px;">
+            <div>
+                <div class="m_pctr" style="width:100%;height:174px;" id="pinfo1">
+                 {dede:arclist typeid='9' titlelen='42' row='5' type='image.' flag='' orderby='weight' orderway='asc'}  
+                  <div class="m_pctt1">
+                      <div class="m_ppic1"><a href="[field:arcurl /]" title="[field:title /]"><img alt="[field:title /]" src="[field:picname/]" alt="[field:title /]" width="161" height="127" /></a></div>
+                      <div class="m_ptxt"><a href="[field:arcurl /]" title="[field:title /]">[field:title /]</a></div>
+                  </div>
+                  {/dede:arclist}                   
+                </div>
+                <div class="m_pctr" style="width:100%;height:174px;display:none;" id="pinfo2">
+                  {dede:arclist typeid='10' titlelen='42' row='5' type='image.' flag='' orderby='weight' orderway='asc'}  
+                  <div class="m_pctt1">
+                      <div class="m_ppic1"><a href="[field:arcurl /]" title="[field:title /]"><img alt="[field:title /]" src="[field:picname/]" alt="[field:title /]" width="161" height="127" /></a></div>
+                      <div class="m_ptxt"><a href="[field:arcurl /]" title="[field:title /]">[field:title /]</a></div>
+                  </div>
+                  {/dede:arclist} 
+                  
+                </div>
+                <div class="m_pctr" style="width:100%;height:174px;display:none;" id="pinfo3">
+                  
+                 {dede:arclist typeid='11' titlelen='42' row='5' type='image.' flag='' orderby='weight' orderway='asc'}  
+                  <div class="m_pctt1">
+                      <div class="m_ppic1"><a href="[field:arcurl /]" title="[field:title /]"><img alt="[field:title /]" src="[field:picname/]" alt="[field:title /]" width="161" height="127" /></a></div>
+                      <div class="m_ptxt"><a href="[field:arcurl /]" title="[field:title /]">[field:title /]</a></div>
+                  </div>
+                  {/dede:arclist} 
+                  
+                </div>
+            </div>
+            <script language="javascript">
+			function showp(id){
+				for(var i=1;i<4;i++){
+				    $("#pt"+i).attr("className","m_t251");
+					$("#pinfo"+i).hide();
+				}
+				$("#pt"+id).attr("className","m_t252");
+				$("#pinfo"+id).show();
+			}
+			</script>
+        </div>
+    </div>
+    <div class="m_ctr">
+        <div class="m_t2">
+            <div class="m_t21">案例展示<span> / CASES</span></div>
+            <div class="m_t22">{dede:type typeid='16'}<a href="[field:typelink /]" >{/dede:type}<img src="/template/skin81/pc/images/more1.gif" /></a></div>
+        </div>
+        <div class="m_ctr2">
+
+            <div class="m_pctr1" style="width:100%;">
+
+{dede:arclist typeid='16' titlelen=26 row=5 type='image.' flag='' orderby='weight' orderway='asc'}
+                  <div class="m_pctt" style="margin:0 16px">
+                      <div class="m_ppic"><a href="[field:arcurl /]" title="[field:title /]"><img alt="[field:title /]" src="[field:picname/]" width="161" height="107" /></a></div>
+                      <div class="m_ptxt"><a href="[field:arcurl /]" title="[field:title /]">[field:title /]</a></div>
+                  </div>
+{/dede:arclist}   
+
+            </div>
+
+        </div>
+    </div>
+    <div class="m_ctr"><a href="/shipinzhanshi/">{dede:myad name='anlihh'/}</div>
+    <div class="m_ctr">
+        <div class="m_t2" style="margin-bottom:0;">
+            <div class="m_t21">友情链接<span> / LINKS</span></div>
+        </div>
+        <div class="link_ctt">
+        
+{dede:flink row='48' type='text' titlelen="24"  typeid="0"}[field:link /]{/dede:flink}
+        </div>
+    </div>
+</div>
+{dede:include filename="bom.htm"/}
+</body>
+</html>

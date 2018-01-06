@@ -1,0 +1,22 @@
+﻿<div id="foot">
+    <div class="foot_ctr">
+        <div class="foot_t1"><a href="/">首页</a>{dede:channelartlist typeid=top row=8}  |  <a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>{/dede:channelartlist} </div>
+        <div class="foot_t2">
+{dede:global.cfg_banquan/} 技术支持：<a href="http://www.zhanoo.com/">站窝窝</a>
+        </div>
+    </div>
+</div>
+<script language="javascript" charset="utf-8">
+if (document.getElementById("ejnav{ideacms:cursort}")){
+	if (document.getElementById("ejnav{ideacms:cursort}").className=="ej_lnav2"){
+		document.getElementById("ejnav{ideacms:cursort}").className="ej_lnav3";
+	}
+	else {
+	    document.getElementById("ejnav{ideacms:cursort}").className="ej_lnav1";
+	}
+}
+if (document.getElementById("t{ideacms:topsort}")){
+	document.getElementById("t0").className="nav_cell";
+	document.getElementById("t{ideacms:topsort}").className="nav_cell1";
+}
+</script>

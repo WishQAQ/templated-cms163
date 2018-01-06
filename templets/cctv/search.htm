@@ -1,0 +1,68 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>搜索 {dede:global name='keyword' function='RemoveXSS(@me)'/} 的结果</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/template/skin81/pc/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+{dede:include filename="top.htm"/}
+<div id="main">
+    <div class="m_ctr">
+        <div class="ss_ctr">
+            <div class="ss_p1"></div>
+            <form name="formsearch" id="searchform" method="post" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+    <input type="text"  name="q"  id="s" class="ss_input" value="站内搜索"  />
+    <input type="button" name="toptosearch" id="toptosearch" value=" " title="搜索" class="ss_btn" />
+		  <script type="text/javascript">
+		  $("#toptosearch").click(function(){$("#searchform").submit();});
+		  $("#s").focus(function(){if($.trim($("#s").val())=='站内搜索'){$("#s").val("");}});
+		  $("#s").blur(function(){if($.trim($("#s").val())==''){$("#s").val("站内搜索");}});
+		  </script>
+    <div class="ss_keys"><strong>热门关键词：</strong><a href="/plus/search.php?keyword=海康威视">海康威视</a>&nbsp;&nbsp;<a href="/plus/search.php?keyword=130万" class="sear"><strong>130万网络摄像机</strong></a>&nbsp;&nbsp;<a href="/plus/search.php?keyword=硬盘录像机">硬盘录像机</a>&nbsp;&nbsp;<a href="/plus/search.php?keyword=红外对射">红外对射</a>&nbsp;&nbsp;<a href="/plus/search.php?keyword=考勤机">考勤机</a>&nbsp;&nbsp;<a href="/plus/search.php?keyword=楼宇可视对讲">楼宇可视对讲</a>&nbsp;&nbsp;<a href="/plus/search.php?keyword=远程手机监控" class="sear"><strong>远程手机监控</strong></a></div>
+</form>
+        </div>
+    </div>
+    <div class="m_ctr">
+        <div class="ej_left">
+            <div class="ej_lctr">
+                <div class="ej_t1"><div class="m_t21" style="width:110px;">相关结果</div></div>
+                
+		 {dede:likewords num='8'/}
+
+                
+            </div>
+            <div class="m_lxwm" style="margin-top:8px;"><img alt="服务咨询热线" src="/template/skin81/pc/images/r1.gif" width="204" height="52" /></div>
+<div class="m_lxwm"><img alt="联系方式" src="/template/skin81/pc/images/r2.gif" width="204" height="52" /></div>
+<div class="m_zxly">
+    <div class="m_qq"><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=196367110&site=qq&menu=yes'><img alt="QQ咨询" src="/template/skin81/pc/images/tm.png" width="92" height="40" /></a></div>
+    <div class="m_qq"><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=196367110&site=qq&menu=yes'><img align="快速咨询" src="/template/skin81/pc/images/tm.png" width="92" height="40" /></a></div>
+</div>
+        </div>
+        <div class="ej_right">
+            <div class="ej_rpic"><img alt="banner" src="/template/skin81/pc/images/pic6.jpg" width="779" height="210" /></div>
+            <div class="ej_ctt">
+                <div class="ej_t2">
+                    <div class="m_t21">搜索<font color='red'>{dede:global name='keyword' function='RemoveXSS(@me)'/}</font>的结</div>
+                    <div class="m_t22" style="text-align:right;width:420px;">当前位置：{dede:field name='position'/}</div>
+                </div>
+                <div class="ej_ctr">
+{dede:list perpage='20'}
+                    <div class="newslist_ctr">
+                        <div class="newslist_title">·<a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></div><div class="newslist_date">[field:pubdate function="GetDateMK(@me)"/]</div>
+                    </div>
+{/dede:list}
+                    <div class="pages">{dede:pagelist listsize='4'/}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{dede:include filename="bom.htm"/}
+</body>
+</html>

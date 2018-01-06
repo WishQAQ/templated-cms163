@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("global","",302,329);
+$z[0][4]['name']="cfg_basehost";
+$z[1]=Array("global","",2297,2324);
+$z[1][4]['name']="cfg_basehost";
+$z[2]=Array("global","",4421,4448);
+$z[2][4]['name']="cfg_basehost";
+$z[3]=Array("global","",5368,5394);
+$z[3][4]['name']="cfg_banquan";
+$z[4]=Array("global","",5395,5419);
+$z[4][4]['name']="cfg_beian";
+$z[5]=Array("type","<a title=\"页脚_[field:typename /]\" href=\"[field:typelink /]\">[field:typename /]</a>",5751,5871);
+$z[5][4]['typeid']="20";
+$z[6]=Array("type","<a title=\"页脚_[field:typename /]\" href=\"[field:typelink /]\">[field:typename /]</a>",5983,6103);
+$z[6][4]['typeid']="21";
+$z[7]=Array("type","<a title=\"页脚_[field:typename /]\" href=\"[field:typelink /]\">[field:typename /]</a>",6193,6313);
+$z[7][4]['typeid']="22";
+$z[8]=Array("global","",6609,6636);
+$z[8][4]['name']="cfg_basehost";
+$z[9]=Array("global","",6784,6811);
+$z[9][4]['name']="cfg_basehost";
+$z[10]=Array("global","",6897,6924);
+$z[10][4]['name']="cfg_basehost";
+$z[11]=Array("global","",6987,7014);
+$z[11][4]['name']="cfg_basehost";
+$z[12]=Array("global","",7085,7112);
+$z[12][4]['name']="cfg_basehost";
+$z[13]=Array("global","",7227,7254);
+$z[13][4]['name']="cfg_basehost";
+$z[14]=Array("global","",7314,7341);
+$z[14][4]['name']="cfg_basehost";
+$z[15]=Array("global","",7435,7462);
+$z[15][4]['name']="cfg_basehost";
+$z[16]=Array("global","",7508,7535);
+$z[16][4]['name']="cfg_basehost";
+$z[17]=Array("global","",7605,7632);
+$z[17][4]['name']="cfg_basehost";
+$z[18]=Array("global","",7702,7729);
+$z[18][4]['name']="cfg_basehost";
+
+?>

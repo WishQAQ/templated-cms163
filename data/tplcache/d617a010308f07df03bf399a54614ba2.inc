@@ -1,0 +1,1 @@
+<a title="菜单_[field:typename /]" href="[field:typelink /]"></a>

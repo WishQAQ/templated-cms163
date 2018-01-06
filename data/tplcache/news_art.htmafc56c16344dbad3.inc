@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("field","",254,273);
+$z[0][4]['name']="title";
+$z[1]=Array("field","",333,358);
+$z[1][4]['name']="description";
+$z[2]=Array("field","",395,417);
+$z[2][4]['name']="keywords";
+$z[3]=Array("include","",576,610);
+$z[3][4]['filename']="top.htm";
+$z[4]=Array("global","",797,822);
+$z[4][4]['name']="cfg_cmsurl";
+$z[5]=Array("field","",2168,2197);
+$z[5][4]['name']="typename";
+$z[6]=Array("channel","\r\n		 <div class='ej_lnav' id='ejnav55'><a href='[field:typeurl/]'   target=\"\"  title=\"[field:typename/]\">[field:typename/]</a></div><div class='ss' id='s55'></div>\r\n",2227,2433);
+$z[6][4]['type']="son";
+$z[7]=Array("field","",3483,3502);
+$z[7][4]['name']="title";
+$z[8]=Array("field","",3602,3631);
+$z[8][4]['name']="position";
+$z[9]=Array("field","",3749,3768);
+$z[9][4]['name']="title";
+$z[10]=Array("field","",3830,3850);
+$z[10][4]['name']="writer";
+$z[11]=Array("field","",3861,3881);
+$z[11][4]['name']="source";
+$z[12]=Array("field","",3898,3954);
+$z[12][4]['name']="pubdate";
+$z[12][4]['function']="MyDate('Y-m-d H:i',@me)";
+$z[13]=Array("field","",4008,4026);
+$z[13][4]['name']="body";
+$z[14]=Array("prenext","",5196,5221);
+$z[14][4]['get']="pre";
+$z[15]=Array("prenext","",5251,5277);
+$z[15][4]['get']="next";
+$z[16]=Array("arclist","   \r\n                <div class=\"m_pctt\" style=\"margin:0 13px;\">\r\n                    <div class=\"m_ppic\"><a href=\"[field:arcurl /]\" title=\"[field:title /]\"><img alt=\"[field:title /]\" src=\"[field:picname/]\" width=\"161\" height=\"107\" /></a></div>\r\n                    <div class=\"m_ptxt\"><a href=\"[field:arcurl /]\" title=\"[field:title /]\">[field:title /]</a></div>\r\n                </div>\r\n              ",5399,5877);
+$z[16][4]['typeid']="8";
+$z[16][4]['titlelen']="40";
+$z[16][4]['type']="image.";
+$z[16][4]['row']="4";
+$z[17]=Array("include","",5953,5987);
+$z[17][4]['filename']="bom.htm";
+
+?>

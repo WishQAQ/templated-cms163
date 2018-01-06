@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>海康威视DS-7800H-S(N)H系列设备网络访问配置方法_智美达安防</title>
+<meta name="description" content="适用型号： DS-7800S(N)H系列 网络环境： 通过DVR+路由器拨号模式 1、配置方法 第一步：DVR本地设置，确认以下几点是否全部填写： a）进入网络配置-【基本配置】，将自动获取ip地址的勾" />
+<meta name="keywords" content="海康威视DS-7800H-S(N)H系列设备网络访问配置方法" />
+<link href="/template/skin81/pc/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+<script src="/inc/image/jquery-1.4.2.min.js" charset="utf-8" type="text/javascript"></script>
+<script src="/inc/image/pub.js" charset="utf-8" type="text/javascript"></script>
+<script src="/inc/image/order.js" charset="utf-8" type="text/javascript"></script>
+<!--[if IE 6]> <script src="/template/skin81/pc/js/DD_belatedPNG.js"></script> <script> DD_belatedPNG.fix('*'); </script> <![endif]-->
+<div id="head">
+    <div class="head_ctt">
+        <div class="head_left"><a href=""><img alt="湖北智美达安防工程有限公司" src="/template/skin81/pc/images/logo.gif" width="215" height="85" /></a></div>
+        <div class="head_mid"><a href="News/qyxw/2014042608130077.html"><img alt="" src="/template/skin81/pc/images/t1.gif" /></a></div>
+        <div class="head_right1"><img alt="咨询热线" src="/template/skin81/pc/images/t2.gif"></div>
+    </div>
+</div>
+<div class="nav_ctr">
+    <div class="nav_ctt">
+        <div class="nav_cell" id="t0"><a href="/">网站首页</a></div>
+        
+        <div class="nav_fg"></div>
+        <div class="nav_cell" id="t30" onmouseover="changenav(30);" onmouseout="hidenav(30)">
+            <a href="/about/"  title="企业简介">企业简介</a>
+            
+            <div class="ej_navctr" id="tab30" onmouseover="changenav(30);" onmouseout="hidenav(30)">
+                
+                    <div class="ej_nav"><a href="/about/zz/"  target="" title="资质荣誉">资质荣誉</a></div>
+                
+                    <div class="ej_nav"><a href="/about/sh/"  target="" title="售后服务">售后服务</a></div>
+                
+                    <div class="ej_nav"><a href="/about/lx/"  target="" title="联系我们">联系我们</a></div>
+                
+                
+            </div>
+            
+        </div>
+        
+        <div class="nav_fg"></div>
+        <div class="nav_cell" id="t5" onmouseover="changenav(5);" onmouseout="hidenav(5)">
+            <a href="/News/"  title="新闻资讯">新闻资讯</a>
+            
+            <div class="ej_navctr" id="tab5" onmouseover="changenav(5);" onmouseout="hidenav(5)">
+                
+                
+                    <div class="ej_nav"><a href="/News/qy/"  target="" title="企业新闻">企业新闻</a></div>
+                
+                    <div class="ej_nav"><a href="/News/hy/"  target="" title="行业新闻">行业新闻</a></div>
+                
+                
+            </div>
+            
+        </div>
+        
+        <div class="nav_fg"></div>
+        <div class="nav_cell" id="t11" onmouseover="changenav(11);" onmouseout="hidenav(11)">
+            <a href="/Product/"  title="产品展示">产品展示</a>
+            
+            <div class="ej_navctr" id="tab11" onmouseover="changenav(11);" onmouseout="hidenav(11)" style="width:460px;">
+			<div class="ej_nav1">
+                    <div class="ej_nav11">视频监控系统：</div>
+                    <div class="ej_nav12"><a href="/Product/jk/sxj">摄像机</a> | <a href="/Product/jk/dahua">硬盘录像机</a> | <a href="/Product/jk/pj">监控配件</a> | </div>
+                </div><div class="ej_nav1">
+                    <div class="ej_nav11">防盗报警系统：</div>
+                    <div class="ej_nav12"><a href="/Product/fd/ds">红外对射</a> | <a href="/Product/fd/hw">红外探测器</a> | <a href="/Product/fd/bj">报警主机</a> | </div>
+                </div><div class="ej_nav1">
+                    <div class="ej_nav11">楼宇对讲系统：</div>
+                    <div class="ej_nav12"></div>
+                </div><div class="ej_nav1">
+                    <div class="ej_nav11">一卡通系统：</div>
+                    <div class="ej_nav12"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="nav_fg"></div>
+        <div class="nav_cell" id="t14" onmouseover="changenav(14);" onmouseout="hidenav(14)">
+            <a href="/fuwuzhichi/"  title="服务支持">服务支持</a>
+            
+            <div class="ej_navctr" id="tab14" onmouseover="changenav(14);" onmouseout="hidenav(14)">
+                
+                
+                    <div class="ej_nav"><a href="/fuwuzhichi/chanpinbangzhu/"  target="" title="产品帮助">产品帮助</a></div>
+                
+                    <div class="ej_nav"><a href="/fuwuzhichi/ruanjianxiazai/"  target="" title="软件下载">软件下载</a></div>
+                
+                
+            </div>
+            
+        </div>
+        
+        <div class="nav_fg"></div>
+        <div class="nav_cell" id="t17" onmouseover="changenav(17);" onmouseout="hidenav(17)">
+            <a href="/shipinzhanshi/"  title="案例展示">案例展示</a>
+            
+            <div class="ej_navctr" id="tab17" onmouseover="changenav(17);" onmouseout="hidenav(17)">
+                
+                
+                
+            </div>
+            
+        </div>
+        
+        <div class="nav_fg"></div>
+        <div class="nav_cell" id="t34" onmouseover="changenav(34);" onmouseout="hidenav(34)">
+            <a href="/rencaizhaopin/"  title="人才招聘">人才招聘</a>
+            
+            <div class="ej_navctr" id="tab34" onmouseover="changenav(34);" onmouseout="hidenav(34)">
+                
+                
+                    <div class="ej_nav"><a href="/rencaizhaopin/shehuizhaopin/"  target="" title="社会招聘">社会招聘</a></div>
+                
+                    <div class="ej_nav"><a href="/rencaizhaopin/xiaoyuanzhaopin/"  target="" title="校园招聘">校园招聘</a></div>
+                
+                
+            </div>
+            
+        </div>
+        
+        <div class="nav_fg"></div>
+        <div class="nav_cell" id="t47" onmouseover="changenav(47);" onmouseout="hidenav(47)">
+            <a href="/about/lx"  title="联系我们">联系我们</a>
+            
+            <div class="ej_navctr" id="tab47" onmouseover="changenav(47);" onmouseout="hidenav(47)">
+                
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<script language="javascript" charset="utf-8">
+function changenav(num){
+	var allElements = document.getElementsByTagName('*');
+	for (var i=0; i< allElements.length; i++ ) { 
+	   if (allElements[i].className == "ej_navctr" ) { 
+		  allElements[i].style.display="none";
+	   }
+	}
+	$("#tab"+num).show();
+}
+function hidenav(num){
+	$("#tab"+num).hide();
+}
+</script>
+<div id="main">
+    <div class="m_ctr">
+        <div class="ss_ctr">
+            <div class="ss_p1"></div>
+            <form name="formsearch" id="searchform" method="post" action="/plus/search.php">
+    <input type="text"  name="q"  id="s" class="ss_input" value="站内搜索"  />
+    <input type="button" name="toptosearch" id="toptosearch" value=" " title="搜索" class="ss_btn" />
+		  <script type="text/javascript">
+		  $("#toptosearch").click(function(){$("#searchform").submit();});
+		  $("#s").focus(function(){if($.trim($("#s").val())=='站内搜索'){$("#s").val("");}});
+		  $("#s").blur(function(){if($.trim($("#s").val())==''){$("#s").val("站内搜索");}});
+		  </script>
+    <div class="ss_keys"><strong>热门关键词：</strong><a href="'/tags.php?/NVR/">NVR</a> <a href="'/tags.php?/4S%E5%BA%97%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/">4S店监控系统</a> <a href="'/tags.php?/4S%E5%BA%97%E5%AE%89%E9%98%B2%E7%9B%91%E6%8E%A7/">4S店安防监控</a> <a href="'/tags.php?/%E6%A0%A1%E5%8C%BA%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F/">校区监控系统</a> <a href="'/tags.php?/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86/">海康威视</a> <a href="'/tags.php?/%E5%AE%89%E9%98%B2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">安防解决方案</a> <a href="'/tags.php?/%E5%B7%A5%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9B%91%E6%8E%A7/">工程安全监控</a> </div>
+</form>
+        </div>
+    </div>
+    <div class="m_ctr">
+        <div class="ej_left">
+            <div class="ej_lctr">
+                <div class="ej_t1"><div class="m_t21" style="width:110px;">产品帮助</div></div>
+                
+		 <div class='ej_lnav' id='ejnav55'><a href='/fuwuzhichi/chanpinbangzhu/'   target=""  title="产品帮助">产品帮助</a></div><div class='ss' id='s55'></div>
+
+		 <div class='ej_lnav' id='ejnav55'><a href='/fuwuzhichi/ruanjianxiazai/'   target=""  title="软件下载">软件下载</a></div><div class='ss' id='s55'></div>
+
+                
+            </div>
+            <div class="m_lxwm" style="margin-top:8px;"><img alt="服务咨询热线" src="/template/skin81/pc/images/r1.gif" width="204" height="52" /></div>
+<div class="m_lxwm"><img alt="联系方式" src="/template/skin81/pc/images/r2.gif" width="204" height="52" /></div>
+<div class="m_zxly">
+    <div class="m_qq"><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2078034005&site=qq&menu=yes'><img alt="QQ咨询" src="/template/skin81/pc/images/tm.png" width="92" height="40" /></a></div>
+    <div class="m_qq"><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2078034005&site=qq&menu=yes'><img align="快速咨询" src="/template/skin81/pc/images/tm.png" width="92" height="40" /></a></div>
+</div>
+        </div>
+        <div class="ej_right">
+            <div class="ej_rpic"><img alt="banner" src="/template/skin81/pc/images/pic6.jpg" width="779" height="210" /></div>
+            <div class="ej_ctt">
+                <div class="ej_t2">
+                    <div class="m_t21">海康威视DS-7800H-S(N)H系列设备网络访问配置方法</div>
+                    <div class="m_t22" style="text-align:right;width:420px;">当前位置：<a href='http://zhanoo.com/'>主页</a> > <a href='/fuwuzhichi/'>服务支持</a> > <a href='/fuwuzhichi/chanpinbangzhu/'>产品帮助</a> > </div>
+                </div>
+                <div class="ej_ctr">
+                    <div class="newsshow_title">海康威视DS-7800H-S(N)H系列设备网络访问配置方法</div>
+                    <div class="newsshow_sm">发布者admin  来源:未知  发布时间:2014-07-30 15:54</div>
+                    <div class="newsshow_ctt"><p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>适用型号：</strong>DS-7800S(N)H系列</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>网络环境：</strong>通过DVR+路由器拨号模式</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<img _cke_saved_src="http://hmw095090.chinaw3.com/upload/pic/2014041858713313.png" height="18" src="/uploads/allimg/140730/15550G636-1.png" style="border: 0px;" width="22" /><strong>1、配置方法</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>第一步：DVR本地设置，确认以下几点是否全部填写：</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	a）进入网络配置-【基本配置】，将自动获取ip地址的勾取消，手动给硬盘录像机分配局域网&ldquo;IP地址&rdquo;，&ldquo;子网掩码&rdquo;，&ldquo;网关&rdquo;和&ldquo;DNS服务器地址（建议填写8.8.8.8）&rdquo;。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	b）进入【upnp】，将启用upnp的钩取消，不启用。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	c）进入【更多配置】，将rtsp端口改为1554。</p>
+<center style="color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<p style="margin: 10px auto; padding: 0px;">
+		<img _cke_saved_src="/uploads/allimg/140730/15550J021-2.png" alt="" height="280" src="/uploads/allimg/140730/15550J021-2.png" style="border: 0px;" width="600" /></p>
+</center>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>第二步：路由器端口映射</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<img _cke_saved_src="/uploads/allimg/140730/15550LU3-4.png" alt="" height="15" src="/uploads/allimg/140730/15550LU3-4.png" style="border: 0px;" width="15" /><span style="color: rgb(255, 0, 0);">提醒：在进行路由器端口映射之前，请务必关闭设备UPNP功能。</span></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	登陆路由器的配置界面，找到虚拟服务器/端口映射/转发规则，进行映射端口的操作。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	a)设备80、8000、1554三个端口，缺一不可。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	b)若在同一台路由器上有多台监控设备，请使用不同的端口号来区分，不能重复使用。</p>
+<center style="color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<img _cke_saved_src="/uploads/allimg/140730/15550JX0-6.png" alt="" height="212" src="/uploads/allimg/140730/15550JX0-6.png" style="border: 0px;" width="501" /></center>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>第三步：配置自定义域名</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	a）主菜单&mdash;系统配置&mdash;网络配置&mdash;DDNS，勾选启用DDNS，设置设备域名和手机号码。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	设备域名自定义，请以小写字母开头，且整个域名中仅包含小写字母和数字。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	备注：配置界面中如有用户名密码，无须设置。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	b）当设备状态显示在线时可以使用自动生成的访问地址来访问设备。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<img _cke_saved_src="http://hmw095090.chinaw3.com/upload/pic/2014041858713313.png" alt="" height="18" src="/uploads/allimg/140730/15550G636-1.png" style="border: 0px;" width="22" /><strong>2、设备访问</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>方式1：IE浏览器（建议使用标准的IE浏览器）</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	打开IE浏览器，在地址栏直接输入http://www.hik-online.com/自定义域名</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	例如：</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	配置了设备域名为test12345，则直接输入<a href="http://www.hik-online.com/test12345" style="color: rgb(96, 96, 96); text-decoration: none;">http://www.hik-online.com/test12345</a>，即可直接访问设备登录界面。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>方式2：电脑客户端软件（iVMS-4200软件）</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	iVMS-4200客户端软件下载地址：http://pan.baidu.com/share/link?shareid=464258&amp;uk=70662920#</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	备注：</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	iVMS-4000客户端软件主要用于2011年9月之前的设备，针对新的78S(N)H系列的设备不建议使用此版本的客户端。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>方式3：手机监控软件（iVMS-4500软件）</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	下载地址：</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	http://www.hikvision.com//cn/download_more.asp?cid=12#Menu=ChildMenu0</p>
+<center style="color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<p style="margin: 10px auto; padding: 0px;">
+		<img _cke_saved_src="/uploads/allimg/140730/15550G926-10.png" alt="" height="329" src="/uploads/allimg/140730/15550G926-10.png" style="border: 0px;" width="297" /></p>
+</center>
+<center style="color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<p style="margin: 10px auto; padding: 0px;">
+		<img _cke_saved_src="/uploads/allimg/140730/15550L018-12.png" alt="" height="330" src="/uploads/allimg/140730/15550L018-12.png" style="border: 0px;" width="297" /></p>
+</center>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong><img _cke_saved_src="http://hmw095090.chinaw3.com/upload/pic/2014041858713313.png" height="18" src="/uploads/allimg/140730/15550G636-1.png" style="border: 0px;" width="22" />3、关于UPNP功能说明</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	a）UPNP为新的自动端口映射技术，考虑到部分路由器不支持本功能，在此配置方法中未作推荐配置。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	b）如您的路由器可以稳定支持此功能，并在配置中开启该功能，则无需关闭设备上的UPNP功能。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<span style="color: rgb(255, 0, 0);">（此时请注意，切勿在路由器进行端口映射）</span></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	c）UPNP分为自动UPNP和手动UPNP，默认为自动UPNP。此模式下外部端口可能会发生变化，外网访问时需要配合海康DDNS域名。如果使用IP地址+端口的方式访问，建议使用手动UPNP或者端口映射。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong><img _cke_saved_src="http://hmw095090.chinaw3.com/upload/pic/2014041858713313.png" alt="" height="18" src="/uploads/allimg/140730/15550G636-1.png" style="border: 0px;" width="22" />4、常见问题</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>1）Q：什么叫做外网IP地址，可以通过什么方法获取？</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	答：</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	IP地址就是给每个连接在因特网上的主机（比如路由器）分配的一个身份标识。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	它可以是固定的，也可以是动态变化的。具体取决于运营商的分类。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	您可以通过登陆路由器的管理界面&mdash;&mdash;运行状态中查看&ldquo;WAN口状态&rdquo;获取ip。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	如您所获取的IP地址为：192.*.*.*、10.*.*.*、172.*.*.*则说明您的运营商给您分配的并非真正外网的IP地址，此时无法通过域名直接访问，需要与您的运营商联系获取外网真实IP地址。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>2）Q：远程登录界面能进去，预览时提示预览失败？</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	答：</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	a）确认端口映射时是否开放rtsp端口1554。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	b）若已开放还是预览失败，确认设备的upnp是否开启。若路由器开启端口映射，需将DVR的upnp关闭。注意Upnp与端口映射二选一，不能同时操作。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>3）Q：为什么会提示没有注册到DDNS上？</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	答：</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	a）检查下首选DNS是否填写，可以更改为8.8.8.8或者8.8.4.4。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	b）建议使用外网IP测试能否访问，如果可以访问，建议重新更换域名重启设备再尝试。如果不可以，建议测试下外网IP和端口是不是不通。（参考5问题排查的测试命令）</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	c）在不同运营商环境的电脑用外网的ip登录下该设备，看下能否登录预览。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	d）若连接多层路由器的，建议将设备挂到第一层路由下。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>4）问：为什么www.hik-online.com显示设备在线，点击设备连接地址之后无法访问设备？</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	答：</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	a）获取到的动态ip不对。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	这种原因可能是客户的网络为移动、铁通、长城宽带或者部分联通、电信用户等，获取到的外网ip实际上是运营商内部的ip。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	b）获取到的端口不对。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	重启设备或者登陆www.hik-online.com进入&ldquo;设备管理&rdquo;，手动修改设备端口为正确的端口即可。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	c）若路由器开启端口映射，需将DVR的upnp关闭。两者二选一，不能同时操作。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<img _cke_saved_src="http://hmw095090.chinaw3.com/upload/pic/2014041858713313.png" alt="" height="18" src="/uploads/allimg/140730/15550G636-1.png" style="border: 0px;" width="22" /><strong>5、问题排查</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>第一步：排查配置问题</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	请详细参照配置方法，确认好硬盘录像与路由器的配置是否全部已经填写。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>第二步：排查网络</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	可以先使用路由器拨号出来的外网IP来登录设备，看看是否能够正常登录。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	若不能登录的，建议排查端口，可以使用如下命令（win7系统请百度搜索win7telnet）：</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	Telnet+空格+设备外网IP地址+端口号</p>
+<center style="color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<p style="margin: 10px auto; padding: 0px;">
+		<img _cke_saved_src="/uploads/allimg/140730/15550GD4-20.png" alt="" height="326" src="/uploads/allimg/140730/15550GD4-20.png" style="border: 0px;" width="500" /></p>
+</center>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	出现如下的提示的话，说明设备所开放的端口正常。</p>
+<center style="color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<img _cke_saved_src="/uploads/allimg/140730/15550I207-22.png" alt="" height="338" src="/uploads/allimg/140730/15550I207-22.png" style="border: 0px;" width="500" /></center>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	出现连接失败时，请确认配置是否正确，或者更换端口，重新映射。</p>
+<center style="color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<img _cke_saved_src="/uploads/allimg/140730/15550I054-24.png" alt="" height="338" src="/uploads/allimg/140730/15550I054-24.png" style="border: 0px;" width="500" /></center>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	<strong>第三步：排查DDNS</strong></p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	确认好第二步后，使用路由器外网的IP地址来登录设备，看看是否正常。若正常再使用海康DDNS的域名来访问设备。</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	&nbsp;</p>
+<p style="margin: 10px auto; padding: 0px; color: rgb(96, 96, 96); font-family: 宋体; font-size: 14px; line-height: 28px;">
+	如果仍无法正常访问，请咨询海康威视400技术支持热线(400-700-5998)。</p>
+</div>
+                    <div class="newsshow_fx">
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style">
+                    <span class="jiathis_txt">分享到：</span>
+                    <a class="jiathis_button_qzone">QQ空间</a>
+                    <a class="jiathis_button_tsina">新浪微博</a>
+                    <a class="jiathis_button_tqq">腾讯微博</a>
+                    <a class="jiathis_button_weixin">微信</a>
+                    <a class="jiathis_button_copy">复制网址</a>
+                    <a class="jiathis_counter_style"></a>
+                    </div>
+                    <script type="text/javascript" >
+                    var jiathis_config={
+                    	summary:"",
+                    	shortUrl:true,
+                    	hideMore:true
+                    }
+                    </script>
+                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                    </div>
+                    <div class="newsshow_xg">
+                        上一篇：<a href='/fuwuzhichi/chanpinbangzhu/23.html'>酒店无线组网方案——吸顶式无线AP覆盖</a> <br>
+                        下一篇：没有了 
+                    </div>
+                </div>
+            </div>
+            <div class="ej_ctt1">
+             
+                
+            </div>
+        </div>
+    </div>
+</div>
+﻿<div id="foot">
+    <div class="foot_ctr">
+        <div class="foot_t1"><a href="/">首页</a>|  <a href="/about/">企业简介</a>|  <a href="/News/">新闻资讯</a>|  <a href="/Product/">产品展示</a>|  <a href="/fuwuzhichi/">服务支持</a>|  <a href="/shipinzhanshi/">案例展示</a>|  <a href="/rencaizhaopin/">人才招聘</a> </div>
+        <div class="foot_t2">
+            客服热线：0710-2877227&nbsp;&nbsp;业务咨询：0710-2877227&nbsp;&nbsp;传真：0710-2877227&nbsp;&nbsp;邮箱：121673232@qq.com<br />
+            Copyright &copy; 2014-2024 <a href="">湖北智美达安防科技有限公司</a> 版权所有 鄂ICP备14002765号 技术支持：<a href="http://www.xunmoban.com/">寻模板</a>
+        </div>
+    </div>
+</div>
+<script language="javascript" charset="utf-8">
+if (document.getElementById("ejnav{ideacms:cursort}")){
+	if (document.getElementById("ejnav{ideacms:cursort}").className=="ej_lnav2"){
+		document.getElementById("ejnav{ideacms:cursort}").className="ej_lnav3";
+	}
+	else {
+	    document.getElementById("ejnav{ideacms:cursort}").className="ej_lnav1";
+	}
+}
+if (document.getElementById("t{ideacms:topsort}")){
+	document.getElementById("t0").className="nav_cell";
+	document.getElementById("t{ideacms:topsort}").className="nav_cell1";
+}
+</script>
+</body>
+</html>

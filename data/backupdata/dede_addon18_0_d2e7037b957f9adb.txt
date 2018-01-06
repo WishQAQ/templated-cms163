@@ -1,0 +1,1 @@
+INSERT INTO `dede_addon18` VALUES('3','3','','','127.0.0.1','','','测试','测试','测试','/uploads/140725/1-140H511550B47.png','/uploads/140725/1-140H5115545540.png','/uploads/140725/1-140H5115605349.png','测试','http://xyxunjie.taobao.com','1111111');

@@ -1,0 +1,45 @@
+<?php
+$z[0]=Array("field","",254,273);
+$z[0][4]['name']="title";
+$z[1]=Array("field","",330,359);
+$z[1][4]['name']="keywords";
+$z[2]=Array("field","",399,457);
+$z[2][4]['name']="description";
+$z[2][4]['function']="html2text(@me)";
+$z[3]=Array("include","",616,650);
+$z[3][4]['filename']="top.htm";
+$z[4]=Array("global","",837,862);
+$z[4][4]['name']="cfg_cmsurl";
+$z[5]=Array("field","",2208,2237);
+$z[5][4]['name']="typename";
+$z[6]=Array("channel","\r\n		 <div class='ej_lnav' id='ejnav55'><a href='[field:typeurl/]'   target=\"\"  title=\"[field:typename/]\">[field:typename/]</a></div><div class='ss' id='s55'></div>\r\n",2267,2473);
+$z[6][4]['type']="son";
+$z[7]=Array("field","",3523,3676);
+$z[7][4]['name']="shorttitle";
+$z[7][4]['/</div> <div class']="m_t22";
+$z[7][4]['style']="text-align:right;width:420px;";
+$z[7][4]['>当前位置：{dede:field name']="position";
+$z[8]=Array("field","",3900,3921);
+$z[8][4]['name']="litpic";
+$z[9]=Array("field","",3930,3951);
+$z[9][4]['name']="litpic";
+$z[10]=Array("field","",4159,4178);
+$z[10][4]['name']="title";
+$z[11]=Array("field","",4250,4275);
+$z[11][4]['name']="shorttitle";
+$z[12]=Array("field","",4350,4375);
+$z[12][4]['name']="description";
+$z[13]=Array("field","",4863,4881);
+$z[13][4]['name']="body";
+$z[14]=Array("field","",4968,4988);
+$z[14][4]['name']="canshu";
+$z[15]=Array("field","",5075,5096);
+$z[15][4]['name']="zhiliao";
+$z[16]=Array("prenext","",6811,6836);
+$z[16][4]['get']="pre";
+$z[17]=Array("prenext","",6866,6892);
+$z[17][4]['get']="next";
+$z[18]=Array("include","",7573,7607);
+$z[18][4]['filename']="bom.htm";
+
+?>

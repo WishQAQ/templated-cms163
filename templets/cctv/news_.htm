@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.seotitle /}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/template/skin81/pc/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+{dede:include filename="top.htm"/}
+<div id="main">
+    <div class="m_ctr">
+        <div class="ss_ctr">
+            <div class="ss_p1"></div>
+            <form name="formsearch" id="searchform" method="post" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+    <input type="text"  name="q"  id="s" class="ss_input" value="站内搜索"  />
+    <input type="button" name="toptosearch" id="toptosearch" value=" " title="搜索" class="ss_btn" />
+		  <script type="text/javascript">
+		  $("#toptosearch").click(function(){$("#searchform").submit();});
+		  $("#s").focus(function(){if($.trim($("#s").val())=='站内搜索'){$("#s").val("");}});
+		  $("#s").blur(function(){if($.trim($("#s").val())==''){$("#s").val("站内搜索");}});
+		  </script>
+    <div class="ss_keys"><strong>热门关键词：</strong>{dede:tag row='7' sort='new' getall='1'}<a href="'[field:link/]">[field:tag /]</a> {/dede:tag}</div>
+</form>
+        </div>
+    </div>
+    <div class="m_ctr">
+        <div class="ej_left">
+            <div class="ej_lctr">
+                <div class="ej_t1"><div class="m_t21" style="width:110px;">{dede:field name='typename'/}</div></div>
+                {dede:channel type='son' }
+		 <div class='ej_lnav' id='ejnav55'><a href='[field:typeurl/]'   target=""  title="[field:typename/]">[field:typename/]</a></div><div class='ss' id='s55'></div>
+{/dede:channel}
+                
+            </div>
+            <div class="m_lxwm" style="margin-top:8px;"><img alt="服务咨询热线" src="/template/skin81/pc/images/r1.gif" width="204" height="52" /></div>
+<div class="m_lxwm"><img alt="联系方式" src="/template/skin81/pc/images/r2.gif" width="204" height="52" /></div>
+<div class="m_zxly">
+    <div class="m_qq"><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2078034005&site=qq&menu=yes'><img alt="QQ咨询" src="/template/skin81/pc/images/tm.png" width="92" height="40" /></a></div>
+    <div class="m_qq"><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2078034005&site=qq&menu=yes'><img align="快速咨询" src="/template/skin81/pc/images/tm.png" width="92" height="40" /></a></div>
+</div>
+        </div>
+        <div class="ej_right">
+            <div class="ej_rpic"><img alt="banner" src="/template/skin81/pc/images/pic6.jpg" width="779" height="210" /></div>
+            <div class="ej_ctt">
+                <div class="ej_t2">
+                    <div class="m_t21">{dede:field.title/}</div>
+                    <div class="m_t22" style="text-align:right;width:420px;">当前位置：{dede:field name='position'/}</div>
+                </div>
+                <div class="ej_ctr">
+{dede:list pagesize='10'}
+                    <div class="newslist_ctr">
+                        <div class="newslist_title">·<a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></div><div class="newslist_date">[field:pubdate function="GetDateMK(@me)"/]</div>
+                    </div>
+{/dede:list}
+                    <div class="pages">{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{dede:include filename="bom.htm"/}
+</body>
+</html>

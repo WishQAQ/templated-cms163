@@ -1,0 +1,5 @@
+INSERT INTO `dede_diyform1` VALUES('5','0','','','','','');
+INSERT INTO `dede_diyform1` VALUES('6','0','','','','','');
+INSERT INTO `dede_diyform1` VALUES('7','0','','','','','');
+INSERT INTO `dede_diyform1` VALUES('8','0','','','','','');
+INSERT INTO `dede_diyform1` VALUES('9','0','','','','','');

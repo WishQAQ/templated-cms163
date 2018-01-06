@@ -1,0 +1,47 @@
+<?php
+$z[0]=Array("field","",257,276);
+$z[0][4]['name']="title";
+$z[1]=Array("field","",336,361);
+$z[1][4]['name']="description";
+$z[2]=Array("field","",398,420);
+$z[2][4]['name']="keywords";
+$z[3]=Array("include","",579,613);
+$z[3][4]['filename']="top.htm";
+$z[4]=Array("global","",800,825);
+$z[4][4]['name']="cfg_cmsurl";
+$z[5]=Array("tag","<a href=\"'[field:link/]\">[field:tag /]</a> ",1401,1496);
+$z[5][4]['row']="7";
+$z[5][4]['sort']="new";
+$z[5][4]['getall']="1";
+$z[6]=Array("field","",1707,1736);
+$z[6][4]['name']="typename";
+$z[7]=Array("channel","\r\n		 <div class='ej_lnav' id='ejnav55'><a href='[field:typeurl/]'   target=\"\"  title=\"[field:typename/]\">[field:typename/]</a></div><div class='ss' id='s55'></div>\r\n",1766,1972);
+$z[7][4]['type']="son";
+$z[8]=Array("field","",3022,3041);
+$z[8][4]['name']="title";
+$z[9]=Array("field","",3141,3170);
+$z[9][4]['name']="position";
+$z[10]=Array("field","",3288,3307);
+$z[10][4]['name']="title";
+$z[11]=Array("field","",3369,3389);
+$z[11][4]['name']="writer";
+$z[12]=Array("field","",3400,3420);
+$z[12][4]['name']="source";
+$z[13]=Array("field","",3437,3493);
+$z[13][4]['name']="pubdate";
+$z[13][4]['function']="MyDate('Y-m-d H:i',@me)";
+$z[14]=Array("field","",3547,3565);
+$z[14][4]['name']="body";
+$z[15]=Array("prenext","",4735,4760);
+$z[15][4]['get']="pre";
+$z[16]=Array("prenext","",4790,4816);
+$z[16][4]['get']="next";
+$z[17]=Array("arclist","   \r\n                <div class=\"m_pctt\" style=\"margin:0 13px;\">\r\n                    <div class=\"m_ppic\"><a href=\"[field:arcurl /]\" title=\"[field:title /]\"><img alt=\"[field:title /]\" src=\"[field:picname/]\" width=\"161\" height=\"107\" /></a></div>\r\n                    <div class=\"m_ptxt\"><a href=\"[field:arcurl /]\" title=\"[field:title /]\">[field:title /]</a></div>\r\n                </div>\r\n              ",4938,5416);
+$z[17][4]['typeid']="8";
+$z[17][4]['titlelen']="40";
+$z[17][4]['type']="image.";
+$z[17][4]['row']="4";
+$z[18]=Array("include","",5492,5526);
+$z[18][4]['filename']="bom.htm";
+
+?>

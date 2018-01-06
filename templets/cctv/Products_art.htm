@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_智美达安防</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/template/skin81/pc/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+{dede:include filename="top.htm"/}
+<div id="main">
+    <div class="m_ctr">
+        <div class="ss_ctr">
+            <div class="ss_p1"></div>
+            <form name="formsearch" id="searchform" method="post" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+    <input type="text"  name="q"  id="s" class="ss_input" value="站内搜索"  />
+    <input type="button" name="toptosearch" id="toptosearch" value=" " title="搜索" class="ss_btn" />
+		  <script type="text/javascript">
+		  $("#toptosearch").click(function(){$("#searchform").submit();});
+		  $("#s").focus(function(){if($.trim($("#s").val())=='站内搜索'){$("#s").val("");}});
+		  $("#s").blur(function(){if($.trim($("#s").val())==''){$("#s").val("站内搜索");}});
+		  </script>
+    <div class="ss_keys"><strong>热门关键词：</strong>{dede:tag row='7' sort='new' getall='1'}<a href="'[field:link/]">[field:tag /]</a> {/dede:tag}</div>
+</form>
+        </div>
+    </div>
+    <div class="m_ctr">
+        <div class="ej_left">
+            <div class="ej_lctr">
+                <div class="ej_t1"><div class="m_t21" style="width:110px;">{dede:field name='typename'/}</div></div>
+                {dede:channel type='son' }
+		 <div class='ej_lnav' id='ejnav55'><a href='[field:typeurl/]'   target=""  title="[field:typename/]">[field:typename/]</a></div><div class='ss' id='s55'></div>
+{/dede:channel}
+                
+            </div>
+            <div class="m_lxwm" style="margin-top:8px;"><img alt="服务咨询热线" src="/template/skin81/pc/images/r1.gif" width="204" height="52" /></div>
+<div class="m_lxwm"><img alt="联系方式" src="/template/skin81/pc/images/r2.gif" width="204" height="52" /></div>
+<div class="m_zxly">
+    <div class="m_qq"><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2078034005&site=qq&menu=yes'><img alt="QQ咨询" src="/template/skin81/pc/images/tm.png" width="92" height="40" /></a></div>
+    <div class="m_qq"><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2078034005&site=qq&menu=yes'><img align="快速咨询" src="/template/skin81/pc/images/tm.png" width="92" height="40" /></a></div>
+</div>
+        </div>
+        <div class="ej_right">
+            <div class="ej_rpic"><img alt="banner" src="/template/skin81/pc/images/pic6.jpg" width="779" height="210" /></div>
+            <div class="ej_ctt">
+                <div class="ej_t2">
+                    <div class="m_t21">{dede:field.shorttitle /</div>
+                    <div class="m_t22" style="text-align:right;width:420px;">当前位置：{dede:field name='position'/}</div>
+                </div>
+                <div class="ej_ctr">
+                    <div class="productshow_picctr">
+                        <div id='preview'>
+<div class='jqzoom' id='spec-n1'><IMG height='230' src='{dede:field.litpic /}' jqimg='{dede:field.litpic /}' width='300'></div>
+<div id='spec-n5'>
+
+
+
+</div>
+</div>   
+                    </div>
+                    <div class="productshow_titlectr">
+                        <div class="productshow_title"> {dede:field.title/}</div>
+                        <div class="productshow_id">商品型号{dede:field.shorttitle /}</div>
+                        <div class="productshow_id">商品概述：{dede:field.description/}</div>
+                    </div>
+                    <div class="info_title">
+                        <div class="info_tcell" id="pt1" onclick="showp(1);">产品说明</div>
+                        <div class="info_tcell1" id="pt2" onclick="showp(2);">详细参数</div>
+                        <div class="info_tcell1" id="pt3" onclick="showp(3);">资料下载</div>
+                    </div>
+                    <div>
+                        <div class="info_ctt" id="pinfo1">{dede:field.body/}</div>
+                        <div class="info_ctt" id="pinfo2" style="display:none">{dede:field.canshu/}</div>
+                        <div class="info_ctt" id="pinfo3" style="display:none">{dede:field.zhiliao/}</div>
+                    </div>
+                    <script language="javascript">
+					function showp(id){
+						$("#pt1").attr("className","info_tcell1");
+						$("#pt2").attr("className","info_tcell1");
+						$("#pt3").attr("className","info_tcell1");
+						$("#pt"+id).attr("className","info_tcell");
+						$("#pinfo1").hide();
+						$("#pinfo2").hide();
+						$("#pinfo3").hide();
+						$("#pinfo"+id).show();
+					}
+					</script>
+                    <div class="ej_cont">智美达安防系统工程有限公司联系方式</div>
+                    <div class="newsshow_fx">
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style">
+                    <span class="jiathis_txt">分享到：</span>
+                    <a class="jiathis_button_qzone">QQ空间</a>
+                    <a class="jiathis_button_tsina">新浪微博</a>
+                    <a class="jiathis_button_tqq">腾讯微博</a>
+                    <a class="jiathis_button_weixin">微信</a>
+                    <a class="jiathis_button_copy">复制网址</a>
+                    <a class="jiathis_counter_style"></a>
+                    </div>
+                    <script type="text/javascript" >
+                    var jiathis_config={
+                    	summary:"",
+                    	shortUrl:true,
+                    	hideMore:true
+                    }
+                    </script>
+                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                    </div>
+                    <div class="newsshow_xg">
+                        {dede:prenext get='pre'/}<br>
+                        {dede:prenext get='next'/}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<SCRIPT src="/inc/image/lib.js" charset="utf-8" type="text/javascript"></SCRIPT>
+<SCRIPT src="/inc/image/163css.js" charset="utf-8" type="text/javascript"></SCRIPT>
+<script language="javascript">
+var allElements = document.getElementsByTagName('*');
+var k=0;
+if(document.getElementById("s37")){
+	document.getElementById("s37").style.display="block";
+}
+else {
+	for (var i=0; i< allElements.length; i++ ) { 
+	   if (allElements[i].className == "ss" ) {
+		   k=k+1;
+		   if(k==1) {
+			  allElements[i].style.display="block";
+		   }
+	   }
+	}
+}
+</script>
+
+{dede:include filename="bom.htm"/}
+</body>
+</html>

@@ -1,0 +1,1 @@
+<a title="页脚_[field:typename /]" href="[field:typelink /]">[field:typename /]</a>

@@ -1,0 +1,1 @@
+<a title="了解更多_[field:typename /]" href="[field:typelink /]">

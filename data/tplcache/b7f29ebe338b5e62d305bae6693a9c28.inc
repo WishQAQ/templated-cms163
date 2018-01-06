@@ -1,0 +1,1 @@
+<a title="Ò³½Å_[field:typename /]" href="[field:typelink /]">[field:typename /]</a>
